@@ -134,7 +134,9 @@ public class Cloudformation extends AWSTools {
             "              \"Action\": [\n" +
             "                \"ec2:CreateNetworkInterface\",\n" +
             "                \"ec2:DescribeNetworkInterfaces\",\n" +
-            "                \"ec2:DeleteNetworkInterface\"\n" +
+            "                \"ec2:DeleteNetworkInterface\",\n" +
+            "                \"dynamodb:*\",\n" +
+            "                \"cloudwatch:*\"\n" +
             "              ],\n" +
             "              \"Resource\": \"*\"\n" +
             "            },\n" +
